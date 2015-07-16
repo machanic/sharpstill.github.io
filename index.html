@@ -5,23 +5,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>倒挂树</title>
-  <meta name="author" content="sharpstill">
-  
-  <meta name="description" content="Flip Tree是个记录分享一些机器学习，和技术方面的心得的个人博客，本站的文章遵循&lt;a href=&#39;http://creativecommons.org/licenses/by-sa/3.0/&#39;&gt;Creative Commons 协议&lt;/a&gt;。">
+  <title>sharpstill的编程小屋</title>
+  <meta name="author" content="马晨">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="倒挂树"/>
+  <meta property="og:site_name" content="sharpstill的编程小屋"/>
 
   
     <meta property="og:image" content="undefined"/>
   
 
   <link href="/favicon.ico" rel="icon" type="image/x-ico">
-  <link rel="alternate" href="http://zipperary.com/atom.xml" title="倒挂树" type="application/atom+xml">
+  <link rel="alternate" href="http://zipperary.com/atom.xml" title="sharpstill的编程小屋" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
@@ -31,8 +29,8 @@
 <body>
   <header id="header" class="inner">
 <div class="alignleft">
-  <h1><a href="/">倒挂树</a></h1>
-  <h2><a href="/">Don&#39;t panic</a></h2>
+  <h1><a href="/">sharpstill的编程小屋</a></h1>
+  <h2><a href="/"></a></h2>
 </div>
 <nav id="main-nav" class="alignright">
   <ul>
@@ -219,22 +217,22 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-01-05T12:53:53.000Z"><a href="/2015/01/05/hello-world-1/">1月 5 2015</a></time>
+        <time datetime="2015-07-16T02:20:17.000Z"><a href="/2015/07/16/高斯混合模型中的多维高斯分布/">2015-07-16</a></time>
       
       
   
-    <h1 class="title"><a href="/2015/01/05/hello-world-1/">hello world</a></h1>
+    <h1 class="title"><a href="/2015/07/16/高斯混合模型中的多维高斯分布/">高斯混合模型中的多维高斯分布</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <h1 id="我的第一篇博客">我的第一篇博客</h1>
-<blockquote>
-<p>这是我的自从evernote记笔记以来的另一次重大历程<br>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
-</blockquote>
-<p>This equation <span>$\cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1$</span> is inline.</p>
-<p>$$[\int {\sum\limits_x a } ]$$</p>
+        <p>高斯混合模型是一种基础常见的聚类算法，该算法中如果要使用高斯分布，就非常有必要研究一下多维高斯分布，因为现实数据挖掘中经常是多维函数。</p>
+<p><img src="/images/multivar_gauss_distribution.png" alt="多维高斯分布"></p>
+<p>在推导二维高斯分布时候其中用到了皮尔逊相关系数公式</p>
+<p><img src="/images/pearson_cor.png" alt="皮尔逊相关系数公式"></p>
+<p>以及二阶矩阵的快速求逆</p>
+<p><img src="/images/inverse_matrix.png" alt="二阶矩阵的快速求逆"></p>
 
       
     </div>
@@ -269,33 +267,82 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-12-16T07:10:04.000Z"><a href="/2014/12/16/hello-world/">12月 16 2014</a></time>
+        <time datetime="2015-07-16T01:56:31.000Z"><a href="/2015/07/16/word里添加公式编号并且右对齐的方法/">2015-07-16</a></time>
       
       
   
-    <h1 class="title"><a href="/2014/12/16/hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/2015/07/16/word里添加公式编号并且右对齐的方法/">word里添加公式编号并且右对齐的方法</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+        <h2 id="一、做好多级列表">一、做好多级列表</h2><p>1.用大纲视图，为每一章标注一级二级三级。（这样就可以正常生成目录了）</p>
+<p>2.用开始-多级列表，点击新建多级列表。然后就可以抹上第一章的一级标题了。</p>
+<p>紧接着就可以对公式使用题注编号了：</p>
+<h2 id="二、在右侧添加题注">二、在右侧添加题注</h2><p>（1）选中任意空行，双击页面最顶上的标尺条，(在开始-段落-右下角小箭头点击，然后点击段落对话框的制表符)</p>
+<p>弹出制表位窗口（需要找准位置多试几次）。通过单击页面最右上角的图标显示标尺。点击“全部清除”清除所有制表位。</p>
+<p>（2）依次：“居中”——19字符——“设置”，“右对齐”——38字符——“设置”，设置出两个制表符位置。 </p>
+<p>这样就有对齐了。</p>
+<p>（3）确定后，通过“Ctrl+Shift+S”调出应用样式窗口，输入任意名（如：公式），确定，建立公式样式。 </p>
+<p>（4）选中要插入公式的空行，在开始面板中点击刚刚建立的公式样式。 </p>
+<p>（5）点一次Tab光标到居中位置，点击插入面板的公式按钮。插入所需公式，再点一次Tab，光标到右对齐位置。然后回车（很关键！！）。</p>
+<p>回车后，点击引用面板中的插入题注(alt + s + p)，标签选择新建标签。点击(按钮，编号按钮选中“包含章节号”，章节起始样式为“标题1”，最后在框子里再敲入空格+)。</p>
+<p>（6）将光标跳到公式行末尾，“ctrl+Alt+Enter”，出入个什么什么符（忘记叫什么了）。修改成需要的形式（如加上括号什么的，不知道这步有没有简单方法？！！！）<br>其他形式同理</p>
+<p>（7）替换掉公式编号里的空格，ctrl+H出现替换对话框，样式选择题注，这样就只替换题注了。然后将（不带双引号）”( “替换为”(“，将” )”替换为”)”</p>
+<h2 id="三、引用公式">三、引用公式</h2><p>之后就可以使用“交叉引用”功能插入公式引用了，如果题注的公式更新了，使用ctrl+A选中全文，然后按F9更新全域。</p>
 
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-07-16T01:51:59.949Z"><a href="/2015/07/16/hello-world/">2015-07-16</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/07/16/hello-world/">Hello World</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
@@ -322,17 +369,19 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="search" name="q" results="0" placeholder="搜尋">
     <input type="hidden" name="q" value="site:sharpstill.github.io">
   </form>
 </div>
 
   
 <div class="widget tag">
-  <h3 class="title">分类</h3>
+  <h3 class="title">分類</h3>
   <ul class="entry">
   
-    <li><a href="/categories/杂记/">杂记</a><small>1</small></li>
+    <li><a href="/categories/写作软件工具/">写作软件工具</a><small>1</small></li>
+  
+    <li><a href="/categories/数据挖掘/">数据挖掘</a><small>1</small></li>
   
   </ul>
 </div>
@@ -368,7 +417,7 @@ var duoshuoQuery = {short_name:"sharpstill"};
     <div class="clearfix"></div>
   </div>
   <footer id="footer" class="inner"><section>
-Theme of <a href="https://github.com/hexojs/hexo-theme-light">Light</a>, Improved by <a href="/">sharpstill</a> 
+本站的文章遵循<a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons 协议</a>, Improved by <a href="http://www.weibo.com/u/1758081527/home">sharpstill</a> 
 </section>
 <div class="clearfix"></div>
 </footer>
